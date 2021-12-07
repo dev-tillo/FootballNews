@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_110sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardgamer1"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turnamentname">
+
+        <ImageView
+            android:id="@+id/gamer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardgamer2"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turnamentname">
+
+        <ImageView
+            android:id="@+id/gamer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxWidth="@dimen/_100sdp"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toLeftOf="@id/cardgamer1"
+        app:layout_constraintRight_toRightOf="@id/cardgamer1"
+        app:layout_constraintTop_toBottomOf="@id/cardgamer1" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxWidth="@dimen/_100sdp"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toLeftOf="@id/cardgamer2"
+        app:layout_constraintRight_toRightOf="@id/cardgamer2"
+        app:layout_constraintTop_toBottomOf="@id/cardgamer2" />
+
+
+    <TextView
+        android:id="@+id/shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxWidth="@dimen/_80sdp"
+        android:maxLines="1"
+        android:text="Shoots"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toRightOf="@id/cardgamer1"
+        app:layout_constraintRight_toLeftOf="@id/cardgamer2"
+        app:layout_constraintTop_toBottomOf="@id/turnamentname" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:maxWidth="@dimen/_100sdp"
+        android:maxLines="1"
+        android:text="Time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toRightOf="@id/cardgamer1"
+        app:layout_constraintRight_toLeftOf="@id/cardgamer2"
+        app:layout_constraintTop_toBottomOf="@id/shot" />
+
+    <TextView
+        android:id="@+id/turnamentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/_300sdp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Primier Liga"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#7E002AFF"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

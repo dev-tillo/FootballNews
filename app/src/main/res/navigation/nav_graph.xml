@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashHome">
+
+    <fragment
+        android:id="@+id/splashHome"
+        android:name="com.example.footballnews.splash.SplashHome"
+        android:label="fragment_splash_home"
+        tools:layout="@layout/fragment_splash_home" />
+    <fragment
+        android:id="@+id/user"
+        android:name="com.example.footballnews.bottomfragments.User"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/championats"
+        android:name="com.example.footballnews.bottomfragments.Championats"
+        android:label="fragment_championats"
+        tools:layout="@layout/fragment_championats" />
+    <fragment
+        android:id="@+id/tabAndViewpager"
+        android:name="com.example.footballnews.fragments.TabAndViewpager"
+        android:label="fragment_tab_and_viewpager"
+        tools:layout="@layout/fragment_tab_and_viewpager" />
+    <fragment
+        android:id="@+id/newsAll"
+        android:name="com.example.footballnews.bottomfragments.NewsAll"
+        android:label="fragment_news_all"
+        tools:layout="@layout/fragment_news_all" />
+    <fragment
+        android:id="@+id/all_rv"
+        android:name="com.example.footballnews.fragments.All_rv"
+        android:label="fragment_all_rv"
+        tools:layout="@layout/fragment_all_rv" />
+    <fragment
+        android:id="@+id/championsliga"
+        android:name="com.example.footballnews.fragments.Championsliga"
+        android:label="fragment_championsliga"
+        tools:layout="@layout/fragment_championsliga" />
+</navigation>
